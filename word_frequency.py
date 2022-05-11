@@ -10,16 +10,16 @@ or had been."""
 word = ss.split()
 print(word)
 
-# d = {x:0 for x in word}
-# print(d)
-# for w in word:
-#     d[w] +=1
-
-# print(d)
-
-#second method
-d = {}
+d = {x:0 for x in word}
+print(d)
 for w in word:
-    d[w] = d.get(w,0) +1
+    d[w] +=1
 
 print(d)
+
+#second method
+# d = {}
+# for w in word:
+#     d[w] = d.get(w,0) +1
+
+# print(d)

@@ -7,9 +7,16 @@ print("The original list : " ,test_list)
 # print(res)
 
 #second method
-test1 = set(range(max(test_list)+1))
-test2 = set(test_list)
-print(test1)
-print(test2)
-res = list(set(range(max(test_list)+1)) - set(test_list))
+# test1 = set(range(max(test_list)+1))
+# test2 = set(test_list)
+# print(test1)
+# print(test2)
+# res = list(set(range(max(test_list)+1)) - set(test_list))
+# print(res)
+
+res = [ele for ele in range(max(test_list)+1) if ele not in test_list]
+
 print(res)
+
+res1 =  list(set(range(max(test_list)+1)) - set(test_list))
+print(res1)
